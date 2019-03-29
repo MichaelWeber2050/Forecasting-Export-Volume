@@ -35,3 +35,7 @@ __With such high growth, can we still accurately forecast volume?__
 For the forecast model I used FB Prophet because it is super easy to use and gets a pretty accurate model accounting for seasonality, historical trend changes and handling of any missing dates "right out of the box". I binned the counts of distinct containers per day and created a dataframe with days in datetime format in one column as "ds" and container count per day as target "y" in the other for use in time series modeling.
  
 There were 1609 dates and container counts in the df Parameters used were yearly seasonality and holidays to account for annual trends in the shipping industry. FB Prophet model allows for easy built in holiday inclusion with a country code CN for China. Also a prior scale and linear growth were used. I trained the model on the first two years of my data set and used the other two and a half years as my test set. The model uses a moving average and auto regression to predict and it did quite well.
+
+__Results__
+
+RMSE 837 which means daily the forecast model was off by about 837 containers. This is only about 7% of the daily volume so the model is useful to predict the future volume and can be used as a baseline for decision making and performance metrics going forward. 
