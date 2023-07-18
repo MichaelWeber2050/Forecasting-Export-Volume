@@ -7,6 +7,8 @@ __Motivation__
 
 Forecasting is a data science task that is central to many activities within any organization. Large organizations like those that run large international ports, global shipping carriers and importers of products must engage in capacity planning to efficiently allocate scarce resources and goal setting in order to measure performance relative to a baseline. Producing high quality forecasts is not an easy problem to solve but in this project I attempt to do just that.
 
+*July 2023 update - edit* I was correct --> http://regional.chinadaily.com.cn/swjen/2022-09/21/c_813900.htm
+
 __Data__
 
 The data I gathered was the last 5 years of USA Bill of Lading import records from Enigma Public (https://public.enigma.com/ (https://public.enigma.com/)) a great source for datasets. I used all the records available which were from 2014-2018 consisting of over 100 million shipments or observations. Some of the data fields include port of origin, carrier vessel name, destination, arrival date, harmonized tax code and text description of container contents.
